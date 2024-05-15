@@ -1,0 +1,97 @@
+@use "../base/typography";
+@use "../abstracts/container";
+@use "../vendors/general";
+
+.row-pd {
+    margin: 0;
+    padding: 0;
+    margin-top: 24px;
+}
+
+.pets__list {
+    position: relative;
+    margin-top: 22px;
+}
+
+.pets__list::after {
+    content: '';
+    position: absolute;
+    width: 33px;
+    height: 65.691px;
+    bottom: 16px;
+    right: -44px;
+    background-image: url(/images/ping.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.pets__card {
+    padding: 12px 16px;
+}
+
+.pets__list li {
+    padding: 10px;
+}
+
+.pets__card h5 {
+    color: #2D2D2D;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.pets__card p {
+    color: #909090;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.card-body {
+    padding: 18px 21px;
+}
+
+.tv__card {
+    width: 26.5px;
+    height: 26.5px;
+}
+
+.animal__card {
+    width: 152.727px;
+    height: 147.443px;
+}
+
+.pets__link {
+    display: flex;
+    margin: 32px 0;
+    width: max-content;
+    align-items: center;
+    color: #19707D;
+    font-family: "Roboto Mono";
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: 1px solid #19707D;
+    column-gap: 14px;
+}
+
+.pets__link::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url(/images/like.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 100px;
+}
+
+@media only screen and (min-width: 992px) {
+    .row-pd {
+        margin-top: 24px;
+    }
+}
