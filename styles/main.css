@@ -13441,6 +13441,7 @@ html {
 }
 
 body {
+  width: 100%;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   display: -webkit-box;
@@ -13499,7 +13500,7 @@ img {
   font-family: "Roboto Mono";
   font-weight: 700;
   font-size: 18px;
-  color: #f3f7fb;
+  color: #C5E1E5;
 }
 
 .open-menu {
@@ -13536,6 +13537,9 @@ img {
   }
   .navbar-item:hover {
     background-color: transparent;
+    border-bottom: 2px solid #C5E1E5;
+  }
+  .header-link__active {
     border-bottom: 2px solid #C5E1E5;
   }
   .search-input {
@@ -14058,6 +14062,7 @@ img {
 .look-dnone {
   width: 52px;
   height: 52px;
+  margin: 12px 0;
 }
 
 @media only screen and (min-width: 576px) {
@@ -14071,5 +14076,29 @@ img {
 @media only screen and (min-width: 992px) {
   .animal__look__img {
     width: 70%;
+  }
+}
+.footer {
+  width: 100%;
+  background: #196469;
+  padding: 18px 0 20px;
+}
+
+.footer__nav {
+  width: 60%;
+  background: #196469;
+}
+
+.footer__text {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 992px) {
+  .footer {
+    margin-top: 50px;
   }
 }/*# sourceMappingURL=main.css.map */
