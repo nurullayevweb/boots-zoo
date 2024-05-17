@@ -1,0 +1,84 @@
+@use "../base/typography";
+@use "../abstracts/container";
+@use "../vendors/general";
+
+.testimonials {
+    margin-top: 32px;
+}
+
+.testimonials__texts {
+    position: relative;
+    padding: 18px 10px 30px 14px;
+    background-color: #fff;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+}
+
+.testimonials__texts::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 50px solid #fff;
+    bottom: -30px;
+    left: 35px;
+}
+
+.testimonials__texts p {
+    color: #B3B3B3;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.testimonials__texts h5 {
+    color: #2D2D2D;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 142.857%;
+}
+
+.testimonials__profile {
+    color: #000;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 24px;
+    margin-left: 20px;
+}
+
+.testimonials__profile::before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-image: url(/images/amely.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 10px;
+}
+.testimonials__profile__adam::before{
+    background-image: url(/images/adam.png);
+    
+}
+.testimonials__profile__chris::before{
+    background-image: url(/images/chris.png);
+}
+
+.Testimonials__link{
+    max-width: 400px;
+}
+.Testimonials__link::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url(/images/feed.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

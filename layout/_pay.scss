@@ -84,3 +84,29 @@
         margin-top:100px;
     }
 }
+
+@media only screen and (min-width: 1080px){
+    .pay {
+        margin-top: 95px;
+           width: 100%;
+           padding: 202px 0 158px;
+           min-height: 754px;
+           height: max-content;
+           background-image: url(/images/paydesk.png);
+           background-position: center;
+       }
+       .pay__list{
+        margin-top:64px;
+    }
+}
+@media only screen and (min-width: 1380px){
+    .pay {
+        margin-top: 95px;
+           width: 100%;
+           padding: 282px 0 158px;
+           min-height: 804px;
+           height: max-content;
+           background-image: url(/images/paydesk.png);
+           background-position: center;
+       }
+}
