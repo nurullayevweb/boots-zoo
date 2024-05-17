@@ -1,0 +1,86 @@
+@use "../base/typography";
+@use "../abstracts/container";
+@use "../vendors/general";
+
+.pay {
+    width: 100%;
+    padding: 50px 0 90px;
+    min-height: 904.354px;
+    height: max-content;
+    background-image: url(/images/paybg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.pay__title {
+    color: #C5E1E5;
+    font-family: Rubik;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.pay__item__img {
+    width: 113px;
+    height: 113px;
+    background: #fff;
+    box-shadow: 0px 2px 50px rgba(185, 213, 217, 0.60);
+    border-radius: 50%;
+}
+
+.pay__item__title {
+    color: #C5E1E5;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 142.857%;
+}
+
+.pay__link {
+    color: #0D444D;
+    font-family: "Roboto Mono";
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.7px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 11px 52px;
+    border-radius: 100px;
+    background: #C5E1E5;
+    text-decoration: none;
+}
+
+
+@media only screen and (min-width: 576px){
+    .pay {
+        margin-top: 50px;
+        width: 100%;
+        padding: 30px 0 30px;
+        min-height: 401px;
+        max-height: 560px ;
+        height: max-content;
+        background-image: url(/images/paytablet.png);
+        background-position: bottom;
+    }
+    .pay-down{
+        transform: rotate(-90deg);
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .pay {
+     margin-top: 95px;
+        width: 100%;
+        padding: 112px 0 158px;
+        min-height: 564px;
+        height: max-content;
+        background-image: url(/images/paydesk.png);
+        background-position: top right;
+    }
+    .pay__list{
+        margin-top:100px;
+    }
+}
